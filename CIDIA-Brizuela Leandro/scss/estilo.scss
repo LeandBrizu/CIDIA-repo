@@ -1,0 +1,125 @@
+$Vrd_CIDIA:#9dd53a;
+$Vrd_sombra:$Vrd_sombra;
+
+*{
+    margin:0;
+    padding:0;
+}
+body{
+    background-image: url(../assets/img/hex.png);
+    font-family: Arial, Helvetica, sans-serif;
+    .Cidia {
+        text-align: center;
+        text-transform: uppercase;
+        font-family: verdana;
+        font-size: 30px;
+        font-weight: 700;
+        color: $Vrd_CIDIA;
+        text-shadow: 1px 1px 1px $Vrd_sombra, 1px 2px 1px $Vrd_sombra, 1px 3px 1px $Vrd_sombra,
+          1px 4px 1px $Vrd_sombra, 1px 5px 1px $Vrd_sombra, 1px 6px 1px $Vrd_sombra,
+          1px 7px 1px $Vrd_sombra, 1px 8px 1px $Vrd_sombra, 1px 9px 1px $Vrd_sombra,
+          1px 10px 1px $Vrd_sombra, 1px 11px 1px $Vrd_sombra, 1px 12px 1px $Vrd_sombra,
+          1px 18px 6px rgba(16, 16, 16, 0.4), 1px 22px 10px rgba(16, 16, 16, 0.2),
+          1px 25px 35px rgba(16, 16, 16, 0.2), 1px 30px 60px rgba(16, 16, 16, 0.4);
+          @media only screen and (max-width: 576px){
+          text-align: center;
+          text-transform: uppercase;
+          font-family: verdana;
+          font-size: 4em;
+          font-weight: 700;
+          color: $Vrd_CIDIA;
+          text-shadow: 1px 1px 1px $Vrd_sombra, 1px 2px 1px $Vrd_sombra, 1px 3px 1px $Vrd_sombra,
+            1px 4px 1px $Vrd_sombra, 1px 5px 1px $Vrd_sombra, 1px 6px 1px $Vrd_sombra,
+            1px 7px 1px $Vrd_sombra, 1px 8px 1px $Vrd_sombra, 1px 9px 1px $Vrd_sombra,
+            1px 10px 1px $Vrd_sombra, 1px 11px 1px $Vrd_sombra, 1px 12px 1px $Vrd_sombra,
+            1px 18px 6px rgba(16, 16, 16, 0.4), 1px 22px 10px rgba(16, 16, 16, 0.2),
+            1px 25px 35px rgba(16, 16, 16, 0.2), 1px 30px 60px rgba(16, 16, 16, 0.4);
+        }
+      }
+      .compu {
+        text-align: center;
+        text-transform: uppercase;
+        font-family: verdana;
+        margin-top: -7px;
+        font-size: 10px;
+        font-weight: 700;
+        color: $Vrd_CIDIA;
+        text-shadow: 1px 1px 1px $Vrd_sombra, 1px 2px 1px $Vrd_sombra, 1px 3px 1px $Vrd_sombra,
+          1px 4px 1px $Vrd_sombra, 1px 5px 1px $Vrd_sombra, 1px 6px 1px $Vrd_sombra,
+          1px 7px 1px $Vrd_sombra, 1px 18px 6px rgba(16, 16, 16, 0.4),
+          1px 22px 10px rgba(16, 16, 16, 0.2), 1px 25px 35px rgba(16, 16, 16, 0.2),
+          1px 30px 60px rgba(16, 16, 16, 0.4);
+          @media only screen and (max-width: 576px){
+            text-align: center;
+            text-transform: uppercase;
+            font-family: verdana;
+            font-size: 20px;
+            font-weight: 700;
+            color: $Vrd_CIDIA;
+            text-shadow: 1px 1px 1px $Vrd_sombra, 1px 2px 1px $Vrd_sombra, 1px 3px 1px $Vrd_sombra,
+              1px 4px 1px $Vrd_sombra, 1px 5px 1px $Vrd_sombra, 1px 6px 1px $Vrd_sombra,
+              1px 7px 1px $Vrd_sombra, 1px 18px 6px rgba(16, 16, 16, 0.4),
+              1px 22px 10px rgba(16, 16, 16, 0.2), 1px 25px 35px rgba(16, 16, 16, 0.2),
+              1px 30px 60px rgba(16, 16, 16, 0.4);
+          }
+      }
+      .publicidad{
+        margin-top: 20px;
+        margin-bottom: 75px;
+    }
+    .titulo{
+        margin-bottom: 80px;
+    }
+    .contenedor-index{
+        width: 90%;
+        max-width: 1000px;
+        margin: 20px auto;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(1, auto);
+        grid-template-areas:
+        "contenedor-index__info contenedor-index__info" 
+            "contenedor-index__productos contenedor-index__servicios"
+            ;
+        grid-gap: 10px;
+        @media only screen and (max-width: 576px){
+            grid-template-columns: 100%;
+            grid-template-rows: repeat(3, fr);
+            grid-template-areas: 
+            "contenedor-index__info"
+            "contenedor-index__productos"
+            "contenedor-index__servicios";
+        }
+      
+        .caja{
+            background-color:#89c71e9d;
+            border-radius: 5px;
+            padding: 1rem;
+            .contenedor-index__productos{
+                grid-area:contenedor-index__productos;
+            }
+            .contenedor-index__servicios{
+                grid-area:contenedor-index__servicios;
+            }
+            .contenedor-index__info{
+                grid-area:contenedor-index__info;
+                background-color: $Vrd_CIDIA;
+                text-align: center;
+                border-radius: 3px;
+                 
+                    
+                    
+            }
+        
+        }
+    }
+    footer {
+        margin-top: 150px;
+        @media only screen and (max-width: 576px){
+            text-size-adjust: 15%;
+            margin-top: 100px;
+          }
+      }
+}
+
+

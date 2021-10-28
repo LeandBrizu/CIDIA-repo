@@ -1,0 +1,35 @@
+.contenedor-index{
+    width: 90%;
+    max-width: 1000px;
+    margin: 20px auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    grid-template-rows: 1fr 1fr; 
+    gap: 0px 0px; 
+    grid-template-areas: 
+      "contenedor-index__info contenedor-index__info"
+      "contenedor-index__productos contenedor-index__servicios"; 
+    grid-gap: 10px;
+    @media only screen and (max-width: 576px){
+        grid-template-columns: 100%;
+        grid-template-rows: repeat(3, fr);
+        grid-template-areas: 
+        "contenedor-index__info"
+        "contenedor-index__productos"
+        "contenedor-index__servicios";
+    }
+  
+    .caja{
+        background-color:#9cd53a65 ;
+        border-radius: 25px;
+        padding: 1rem; 
+        
+    }
+    .caja_info{
+        @extend .caja;
+        background-color: #1eb61e65;
+    }
+    .contenedor-index__info { grid-area: contenedor-index__info; }
+    .contenedor-index__productos { grid-area: contenedor-index__productos; }
+    .contenedor-index__servicios { grid-area: contenedor-index__servicios; }
+}

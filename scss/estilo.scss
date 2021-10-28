@@ -1,0 +1,26 @@
+*{
+    margin:0;
+    padding:0;
+}
+
+@import "colores";
+@import "containerIndex";
+@import "logo";
+@import "footer";
+@import "_ProductosMenu";
+@import "_ProductosStock";
+
+body{
+    background-image: url(../assets/img/hex.png);
+    font-family: Arial, Helvetica, sans-serif;
+    
+      .publicidad{
+        margin-top: 20px;
+        margin-bottom: 75px;
+    }
+    .titulo{
+        margin-bottom: 80px;
+    }
+}
+
+

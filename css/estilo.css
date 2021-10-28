@@ -1,0 +1,115 @@
+* {
+  margin: 0;
+  padding: 0; }
+
+.contenedor-index {
+  width: 90%;
+  max-width: 1000px;
+  margin: 20px auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 0px 0px;
+  grid-template-areas: "contenedor-index__info contenedor-index__info" "contenedor-index__productos contenedor-index__servicios";
+  grid-gap: 10px; }
+  @media only screen and (max-width: 576px) {
+    .contenedor-index {
+      grid-template-columns: 100%;
+      grid-template-rows: repeat(3, fr);
+      grid-template-areas: "contenedor-index__info" "contenedor-index__productos" "contenedor-index__servicios"; } }
+  .contenedor-index .caja, .contenedor-index .caja_info {
+    background-color: #9cd53a65;
+    border-radius: 25px;
+    padding: 1rem; }
+  .contenedor-index .caja_info {
+    background-color: #1eb61e65; }
+  .contenedor-index .contenedor-index__info {
+    grid-area: contenedor-index__info; }
+  .contenedor-index .contenedor-index__productos {
+    grid-area: contenedor-index__productos; }
+  .contenedor-index .contenedor-index__servicios {
+    grid-area: contenedor-index__servicios; }
+
+.Cidia {
+  text-align: center;
+  text-transform: uppercase;
+  font-family: verdana;
+  font-size: 30px;
+  font-weight: 700;
+  color: #9dd53a;
+  text-shadow: 1px 1px 1px #325003, 1px 2px 1px #325003, 1px 3px 1px #325003, 1px 4px 1px #325003, 1px 5px 1px #325003, 1px 6px 1px #325003, 1px 7px 1px #325003, 1px 8px 1px #325003, 1px 9px 1px #325003, 1px 10px 1px #325003, 1px 11px 1px #325003, 1px 12px 1px #325003, 1px 18px 6px rgba(16, 16, 16, 0.4), 1px 22px 10px rgba(16, 16, 16, 0.2), 1px 25px 35px rgba(16, 16, 16, 0.2), 1px 30px 60px rgba(16, 16, 16, 0.4); }
+  @media only screen and (max-width: 576px) {
+    .Cidia {
+      text-align: center;
+      text-transform: uppercase;
+      font-family: verdana;
+      font-size: 4em;
+      font-weight: 700;
+      color: #9dd53a;
+      text-shadow: 1px 1px 1px #325003, 1px 2px 1px #325003, 1px 3px 1px #325003, 1px 4px 1px #325003, 1px 5px 1px #325003, 1px 6px 1px #325003, 1px 7px 1px #325003, 1px 8px 1px #325003, 1px 9px 1px #325003, 1px 10px 1px #325003, 1px 11px 1px #325003, 1px 12px 1px #325003, 1px 18px 6px rgba(16, 16, 16, 0.4), 1px 22px 10px rgba(16, 16, 16, 0.2), 1px 25px 35px rgba(16, 16, 16, 0.2), 1px 30px 60px rgba(16, 16, 16, 0.4); } }
+
+.compu {
+  text-align: center;
+  text-transform: uppercase;
+  font-family: verdana;
+  margin-top: -7px;
+  font-size: 10px;
+  font-weight: 700;
+  color: #9dd53a;
+  text-shadow: 1px 1px 1px #325003, 1px 2px 1px #325003, 1px 3px 1px #325003, 1px 4px 1px #325003, 1px 5px 1px #325003, 1px 6px 1px #325003, 1px 7px 1px #325003, 1px 18px 6px rgba(16, 16, 16, 0.4), 1px 22px 10px rgba(16, 16, 16, 0.2), 1px 25px 35px rgba(16, 16, 16, 0.2), 1px 30px 60px rgba(16, 16, 16, 0.4); }
+  @media only screen and (max-width: 576px) {
+    .compu {
+      text-align: center;
+      text-transform: uppercase;
+      font-family: verdana;
+      font-size: 20px;
+      font-weight: 700;
+      color: #9dd53a;
+      text-shadow: 1px 1px 1px #325003, 1px 2px 1px #325003, 1px 3px 1px #325003, 1px 4px 1px #325003, 1px 5px 1px #325003, 1px 6px 1px #325003, 1px 7px 1px #325003, 1px 18px 6px rgba(16, 16, 16, 0.4), 1px 22px 10px rgba(16, 16, 16, 0.2), 1px 25px 35px rgba(16, 16, 16, 0.2), 1px 30px 60px rgba(16, 16, 16, 0.4); } }
+
+footer {
+  margin-top: 180px; }
+  @media only screen and (max-width: 576px) {
+    footer {
+      text-size-adjust: 15%;
+      margin-top: 100px; } }
+
+.card-border {
+  border: solid 10px white;
+  border-radius: 20px;
+  overflow: hidden;
+  transition: all ease-out 0.2s; }
+
+.card-border:hover {
+  transform: scale(1.05); }
+
+.imgCard {
+  filter: grayscale(100%); }
+  @media only screen and (max-width: 768px) {
+    .imgCard {
+      filter: grayscale(0%); } }
+
+.imgCard:hover {
+  filter: grayscale(0%);
+  transition: 0.3s; }
+
+.menuProductos {
+  font-size: 25px; }
+  @media only screen and (max-width: 990px) {
+    .menuProductos {
+      font-size: 16px; } }
+  @media only screen and (max-width: 320px) {
+    .menuProductos {
+      font-size: 14px; } }
+
+.precio {
+  color: #c02020; }
+
+body {
+  background-image: url(../assets/img/hex.png);
+  font-family: Arial, Helvetica, sans-serif; }
+  body .publicidad {
+    margin-top: 20px;
+    margin-bottom: 75px; }
+  body .titulo {
+    margin-bottom: 80px; }
