@@ -95,7 +95,7 @@ footer {
 
 .menuProductos {
   font-size: 25px; }
-  @media only screen and (max-width: 990px) {
+  @media only screen and (max-width: 900px) {
     .menuProductos {
       font-size: 16px; } }
   @media only screen and (max-width: 320px) {
@@ -104,6 +104,90 @@ footer {
 
 .precio {
   color: #c02020; }
+
+body {
+  font-family: 'Nunito', sans-serif;
+  color: #384047; }
+  body form {
+    max-width: 300px;
+    margin: 10px auto;
+    padding: 10px 20px;
+    background: #f4f7f8;
+    border-radius: 8px; }
+    @media screen and (min-width: 480px) {
+      body form {
+        max-width: 480px; } }
+    body form h1 {
+      margin: 0 0 30px 0;
+      text-align: center; }
+    body form input[type="text"],
+    body form input[type="password"],
+    body form input[type="date"],
+    body form input[type="datetime"],
+    body form input[type="email"],
+    body form input[type="number"],
+    body form input[type="search"],
+    body form input[type="tel"],
+    body form input[type="time"],
+    body form input[type="url"],
+    body form textarea,
+    body form select {
+      background: rgba(255, 255, 255, 0.1);
+      border: none;
+      font-size: 16px;
+      height: auto;
+      margin: 0;
+      outline: 0;
+      padding: 15px;
+      width: 100%;
+      background-color: #e8eeef;
+      color: #8a97a0;
+      box-shadow: 0 1px 0 rgba(0, 0, 0, 0.03) inset;
+      margin-bottom: 30px; }
+    body form input[type="radio"],
+    body form input[type="checkbox"] {
+      margin: 0 4px 8px 0; }
+    body form select {
+      padding: 6px;
+      height: 32px;
+      border-radius: 2px; }
+    body form button {
+      padding: 19px 39px 18px 39px;
+      color: #FFF;
+      background-color: #4bc970;
+      font-size: 18px;
+      text-align: center;
+      font-style: normal;
+      border-radius: 5px;
+      width: 100%;
+      border: 1px solid #3ac162;
+      border-width: 1px 1px 3px;
+      box-shadow: 0 -1px 0 rgba(255, 255, 255, 0.1) inset;
+      margin-bottom: 10px; }
+    body form fieldset {
+      margin-bottom: 30px;
+      border: none; }
+    body form legend {
+      font-size: 1.4em;
+      margin-bottom: 10px; }
+    body form label {
+      display: block;
+      margin-bottom: 8px; }
+    body form label.light {
+      font-weight: 300;
+      display: inline; }
+    body form .number {
+      background-color: #5fcf80;
+      color: #fff;
+      height: 30px;
+      width: 30px;
+      display: inline-block;
+      font-size: 0.8em;
+      margin-right: 4px;
+      line-height: 30px;
+      text-align: center;
+      text-shadow: 0 1px 0 rgba(255, 255, 255, 0.2);
+      border-radius: 100%; }
 
 body {
   background-image: url(../assets/img/hex.png);
