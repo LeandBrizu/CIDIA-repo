@@ -2,15 +2,13 @@
     margin:0;
     padding:0;
 }
-
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.0/font/bootstrap-icons.css");
 @import "colores";
 @import "containerIndex";
 @import "logo";
 @import "footer";
 @import "_ProductosMenu";
 @import "_ProductosStock";
-@import "_formularios";
-
 
 body{
     background-image: url(../assets/img/hex.png);
@@ -19,10 +17,26 @@ body{
       .publicidad{
         margin-top: 20px;
         margin-bottom: 75px;
+        .slide img{
+            height: 50vh;
+            @media only screen and (max-width: 375px){
+                height: 20vh;}
+            @media only screen and (min-width: 375px){
+                height: 25vh;}
+            @media only screen and (min-width: 540px){
+                height: 35vh;}
+            @media only screen and (min-width: 720px){
+                height: 40vh;}
+            @media only screen and (min-width: 960px){
+                height: 55vh;}
+            @media only screen and (min-width: 1200px){
+                height: 65vh;}
+            @media only screen and (min-width: 1500px){
+                height: 70vh;}
+        }
     }
     .titulo{
         margin-bottom: 80px;
     }
 }
-
 

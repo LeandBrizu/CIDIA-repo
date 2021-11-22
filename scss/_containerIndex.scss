@@ -1,4 +1,5 @@
 .contenedor-index{
+    
     width: 90%;
     max-width: 1000px;
     margin: 20px auto;
@@ -18,18 +19,43 @@
         "contenedor-index__productos"
         "contenedor-index__servicios";
     }
-  
+
     .caja{
-        background-color:#9cd53a65 ;
+        background-color: #97e2159d ;
         border-radius: 25px;
         padding: 1rem; 
-        
+        position: relative;
+
     }
+
     .caja_info{
         @extend .caja;
         background-color: #1eb61e65;
     }
-    .contenedor-index__info { grid-area: contenedor-index__info; }
-    .contenedor-index__productos { grid-area: contenedor-index__productos; }
-    .contenedor-index__servicios { grid-area: contenedor-index__servicios; }
+    .contenedor-index__info { 
+        grid-area: contenedor-index__info;
+        background-image: url(../assets/img/index/CIDIA_local.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        @media only screen and (max-width: 576px){
+         background-position: center;}
+        }
+    .contenedor-index__productos { 
+        grid-area: contenedor-index__productos;
+        background-image: url(../assets/img/index/Productos.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        @media only screen and (max-width: 576px){
+            background-position: center;} 
+        }
+    .contenedor-index__servicios { 
+        grid-area: contenedor-index__servicios;
+        background-image: url(../assets/img/index/Servicio_tecnico.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        @media only screen and (max-width: 576px){
+            background-position: center;} 
+        }
 }
